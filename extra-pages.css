@@ -1,0 +1,138 @@
+/* Root Variables */
+:root {
+  --primary: #4a9eff;
+  --bg: #111111;
+  --card-bg: #1a1a1a;
+  --text: #ffffff;
+  --text-secondary: #888888;
+  --border: rgba(255, 255, 255, 0.1);
+  --twitter-blue: #1DA1F2;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.back-button {
+  display: inline-block;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  background: var(--card-bg);
+  color: var(--primary);
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+.section {
+  margin: 1rem 2rem;
+  background-color: #1a1a1a;
+  padding: 15px;
+  width: fit-content;
+  border-radius: 7px;
+}
+
+.section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #1DA1F2;
+  padding: 0rem 1rem;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  padding: 0rem 1rem;
+ 
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+  color: #f7f7f7;
+  width: 900px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.section a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #b3b3b3;
+}
+
+.section a:hover {
+  color: rgb(60, 197, 188);
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Existing CSS Code */
+
+/* Media Queries for Tablets (768px and below) */
+@media (max-width: 768px) {
+  .back-button {
+    margin: 1rem; /* Reduced margin for tablets */
+    padding: 0.4rem 0.8rem; /* Compact back button */
+    font-size: 0.9rem;
+  }
+
+  .section {
+    margin: 1rem; /* Reduced margin for tablets */
+    padding: 10px; /* Reduced padding */
+    width: 95%;
+  }
+  
+  .section h2 {
+    font-size: 1.5rem; /* Smaller heading for tablets */
+    margin-top: 1rem;
+  }
+
+  .section li {
+    font-size: 0.9rem; /* Smaller list items */
+    width: 90%; /* Full width for tablets */
+  }
+}
+
+/* Media Queries for Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .back-button {
+    margin: 0.5rem; /* Minimal margin for mobile */
+    padding: 0.3rem 0.6rem; /* Most compact back button */
+    font-size: 0.8rem;
+  }
+
+  .section {
+    margin: 0.5rem; /* Minimal margin for mobile */
+    padding: 5px; /* Minimal padding */
+  }
+
+  .section h2 {
+    font-size: 1.2rem; /* Smallest heading for mobile */
+  }
+
+  .section li {
+    font-size: 0.8rem; /* Smallest list items */
+    width: 100%; /* Full width for mobile */
+  }
+}
